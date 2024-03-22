@@ -1,5 +1,5 @@
 resource "aws_instance" "Amazon-Linux2-Server" {
-  count         = 1
+  count         = 2
   ami           = "ami-07761f3ae34c4478d"
   instance_type = "t2.micro"
   key_name      = "macbookreal"
