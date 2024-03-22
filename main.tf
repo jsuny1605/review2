@@ -1,7 +1,7 @@
 resource "aws_instance" "Amazon-Linux2-Server" {
   count         = 2
   ami           = "ami-07761f3ae34c4478d"
-  instance_type = "t2.micro"
+  instance_type = "t2.small"
   key_name      = "macbookreal"
   vpc_security_group_ids = [aws_security_group.Allow-HTTP2.id]
   tags = {
